@@ -28,7 +28,7 @@ function addLoadEvent(func) {
          document.getElementById("resCanvas").width=wid2;
          document.getElementById("resCanvas").height=wid2;
 
-         TagCanvas.textFont = 'PingHei, PingFang SC, Helvetica Neue, Microsoft YaHei';
+         TagCanvas.textFont = '-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,Hiragino Kaku Gothic ProN,Hiragino Sans,ヒラギノ角ゴ ProN W3,Arial,メイリオ,Meiryo,sans-serif';
          TagCanvas.textColour = '#333';
          TagCanvas.textHeight = textHeight;
          TagCanvas.outlineColour = '#E2E1D1';
