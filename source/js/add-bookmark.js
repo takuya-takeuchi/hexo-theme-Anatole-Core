@@ -9,10 +9,10 @@ function join_favorite(siteUrl, siteName){
 			window.sidebar.addPanel(siteName, siteUrl, '');         
 		//如果支持window.sidebar，则用下列方式加入收藏夹  
 		}else{
-			alert("当前使用浏览器需要使用 Ctrl+D 快捷键添加书签！");  
+			alert("現在のブラウザでは、ブックマークするには Ctrl+D のショートカットが必要です");  
 		}					
 	//处理异常       
 	}catch(e){          
-		alert("当前使用浏览器需要使用 Ctrl+D 快捷键添加书签！");   
+		alert("現在のブラウザでは、ブックマークするには Ctrl+D のショートカットが必要です");   
 	}
 }
