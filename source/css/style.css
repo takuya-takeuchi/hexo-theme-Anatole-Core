@@ -125,11 +125,17 @@ a:hover, a:active {
   border-bottom: 1px solid #f2f2f2;
 }
 .page-top .search {
-  list-style: none;
-  float: initial;
-  padding: 7px 15px
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #b2b2b2;
+  border-radius: 3px;
+  margin: 7px 15px 7px 15px;
 }
-.page-top .search input{
+.page-top .search .text {
+  width: auto;
+  height: auto;
+}
+.page-top .search .text input {
   display: block;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -138,10 +144,23 @@ a:hover, a:active {
       -ms-box-sizing: border-box;
           box-sizing: border-box;
   box-sizing: border-box;
-  height: 31px;
+  height: 29px;
   font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,Hiragino Kaku Gothic ProN,Hiragino Sans,ヒラギノ角ゴ ProN W3,Arial,メイリオ,Meiryo,sans-serif;
   font-size: 14px;
+  border: 0px;
+  margin: 0px;
+  padding: 0px 30px 0px 10px;
+  outline: none;
 }
+.page-top .search .btn {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  border: 0px;
+  padding: 2px 8px;
+}
+
 .page-top .nav {
   list-style: none;
   padding: 18px 30px;
