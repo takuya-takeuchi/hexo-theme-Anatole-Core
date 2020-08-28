@@ -112,7 +112,7 @@ a:hover, a:active {
   height: auto;
   float: right;
   width: 70%;
-  margin-top: 60px;
+  margin-top: 105px;
 }
 
 .page-top {
@@ -121,8 +121,26 @@ a:hover, a:active {
   right: 0;
   z-index: 3;
   background-color: #fff;
-  height: 60px;
+  height: 105px;
   border-bottom: 1px solid #f2f2f2;
+}
+.page-top .search {
+  list-style: none;
+  float: initial;
+  padding: 7px 15px
+}
+.page-top .search input{
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+   -khtml-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
+  box-sizing: border-box;
+  height: 31px;
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,Hiragino Kaku Gothic ProN,Hiragino Sans,ヒラギノ角ゴ ProN W3,Arial,メイリオ,Meiryo,sans-serif;
+  font-size: 14px;
 }
 .page-top .nav {
   list-style: none;

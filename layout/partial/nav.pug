@@ -1,4 +1,6 @@
 .page-top.animated.fadeInDown
+  .search
+    input
   .nav
     li
       if is_home()
@@ -24,11 +26,11 @@
       else
         a(href="/about")= __('About')
 
-    li
-      if is_current('guestbook')
-        a.current(href="/guestbook")= __('Guestbook')					
-      else
-        a(href="/guestbook")= __('Guestbook')		
+    //- li
+    //-   if is_current('guestbook')
+    //-     a.current(href="/guestbook")= __('Guestbook')					
+    //-   else
+    //-     a(href="/guestbook")= __('Guestbook')		
 
 
   .information
