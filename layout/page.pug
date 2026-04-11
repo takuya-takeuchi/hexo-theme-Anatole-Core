@@ -12,14 +12,32 @@ block description
 
 block content
 
+    //- if is_current('tags')
+    //-     .autopagerize_page_element: .content
+    //-         .tag_box
+    //-             script(type="text/javascript" charset="utf-8" src="/js/tagcloud.js")
+    //-             script(type="text/javascript" charset="utf-8" src="/js/tagcanvas.js")
+    //-             #myCanvasContainer.widget.tagcloud(align='center')
+    //-                 canvas#resCanvas()
+    //-                     != tagcloud()
     if is_current('tags')
+        - var categories = site.categories && site.categories.data ? site.categories.data : site.categories
         .autopagerize_page_element: .content
             .tag_box
                 script(type="text/javascript" charset="utf-8" src="/js/tagcloud.js")
                 script(type="text/javascript" charset="utf-8" src="/js/tagcanvas.js")
                 #myCanvasContainer.widget.tagcloud(align='center')
                     canvas#resCanvas()
-                        != tagcloud()
+                        if categories && categories.length
+                            each category in categories
+                                if category && category.name && category.path
+                                    a(
+                                        href=url_for(category.path),
+                                        title=category.name,
+                                        data-weight=(category.length || 1)
+                                    )= category.name
+                        else
+                            | no categories
     else
         .autopagerize_page_element: .content: .post-page
             include mixins

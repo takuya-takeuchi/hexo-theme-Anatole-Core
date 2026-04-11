@@ -19,10 +19,16 @@
         a(href="/archives")= __('Archives')
 
     //- li
-    //-   if is_current('tags')
-    //-     a.current(href="/tags")= __('Tags')     
+    //-   if is_current('categories')
+    //-     a.current(href="/categories")= __('Categories')     
     //-   else
-    //-     a(href="/tags")= __('Tags')
+    //-     a(href="/categories")= __('Categories')
+
+    li
+      if is_current('tags')
+        a.current(href="/tags")= __('Tags')     
+      else
+        a(href="/tags")= __('Tags')
 
     li
       if is_current('apps')
